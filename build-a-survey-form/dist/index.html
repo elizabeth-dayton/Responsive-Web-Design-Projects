@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Build a Survey Form</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<center>
+  <h1 id="title">Auburn Engineering Survey Form</h1>
+  <p id="description">Thanks for taking the time to complete this survey</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="John Smith" required></input><br>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="ilovecats@gmail.com" required></input><br>
+
+    <label for="name" id="number-label">Phone Number:</label>
+    <input type="number" id="number" min="0000000000" max="9999999999" placeholder="1234567890"></input><br><br>
+
+    <label for="dropdown" id="dropdown-label">Select your engineering major</label>
+    <select id="dropdown" name="dropdown">
+      <option value="" disabled selected>Select one of the following</option>
+      <option value="aerospace">Aerospace Engineering</option>
+      <option value="biomedical">Biomedical Engineering</option>
+      <option value="civil">Civil Engineering</option>
+      <option value="chemical">Chemical Engineering</option>
+      <option value="electrical">Electrical Engineering</option>
+      <option value="environmental">Environmental Engineering</option>
+      <option value="industrial">Industrial Engineering</option>
+      <option value="mechanical">Mechanical Engineering</option>
+      <option value="nuclear">Nuclear Engineering</option>
+      <option value="software">Software Engineering</option>
+      <option value="other">Other</option>
+    </select>
+
+    <div>
+      <p>How likely are you to recommend Auburn's Engineering program?<br><br>
+        <input type="radio" id="very-likely" name="recommendation" value="very-likely">
+        <label for="very-likely">Very Likely</label>
+        <input type="radio" id="moderately-likely" name="recommendation" value="moderately-likely">
+        <label for="moderately-likely">Moderately Likely</label>
+        <input type="radio" id="indifferent" name="recommendation" value="indifferent">
+        <label for="indifferent">Indifferent</label>
+        <input type="radio" id="moderately-unlikely" name="recommendation" value="moderately-unlikely">
+        <label for="moderately-unlikely">Moderately Unlikely</label>
+        <input type="radio" id="very-unlikely" name="recommendation" value="very-unlikely">
+        <label for="very-unlikely">Very Unlikely</label>
+    </div>
+
+    <div>
+      <p>What could make your experience better? Select all that apply</p>
+      <input type="checkbox" id="cost" name="experience" value="cost">
+      <label for="cost">Reduced cost</label><br>
+      <input type="checkbox" id="labs" name="experience" value="labs">
+      <label for="labs">More computer labs</label><br>
+      <input type="checkbox" id="books" name="experience" value="books">
+      <label for="books">Easier/More affordable access to books</label><br>
+      <input type="checkbox" id="professors" name="experience" value="professors">
+      <label for="professors">Higher quality professors</label><br>
+      <input type="checkbox" id="co-op" name="experience" value="co-op">
+      <label for="co-op">More co-op company choices</label><br>
+      <input type="checkbox" id="housing" name="experience" value="housing">
+      <label for="housing">More affordable access to housing</label><br>
+      <input type="checkbox" id="commute" name="experience" value="commute">
+      <label for="commute">More options for commuters</label><br>
+    </div><br>
+<div>
+  <p>If you have any other further comments or suggestions, please enter them below.</p>
+  <textarea id="comments" name="comments" rows="10" cols="50" placeholder="Enter your comments here"></textarea>
+</div>
+
+<input type="submit" value="Submit" id="submit">
+  </form>
+</center>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
